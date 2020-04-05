@@ -42,7 +42,8 @@
       <br><br>
       <h1 class="header center light-blue-text">আমার বাজার</h1>
       <div class="row center">
-        <h5 class="header col s12 light">একসাথে সবকিছু</h5>
+        <h5 class="header col s12 light">আপনার পন্য সমূহ</h5>
+        <a data-target="add_product" class="waves-effect waves-light btn right light-blue sidenav-trigger"><i class="material-icons left">add_box</i>নতুন পণ্য যোগ করুন</a>
       </div>
     </div>
   </div>
@@ -60,7 +61,7 @@
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">আনার<i class="material-icons right">more_vert</i></span>
-              <p><a href="#" class="btn light-blue">ব্যাগে রাখুন</a></p>
+              <p><a href="#" class="btn light-blue">পরিবর্তন করুন</a></p>
             </div>
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4">আনার<i class="material-icons right">close</i></span>
@@ -81,7 +82,7 @@
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">আম<i class="material-icons right">more_vert</i></span>
-              <p><a href="#" class="btn light-blue">ব্যাগে রাখুন</a></p>
+              <p><a href="#" class="btn light-blue">পরিবর্তন করুন</a></p>
             </div>
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4">আম<i class="material-icons right">close</i></span>
@@ -102,7 +103,7 @@
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">ফজলি আম<i class="material-icons right">more_vert</i></span>
-              <p><a href="#" class="btn light-blue">ব্যাগে রাখুন</a></p>
+              <p><a href="#" class="btn light-blue">পরিবর্তন করুন</a></p>
             </div>
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4">ফজলি আম<i class="material-icons right">close</i></span>
@@ -123,7 +124,7 @@
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">কমলা<i class="material-icons right">more_vert</i></span>
-              <p><a href="#" class="btn light-blue">ব্যাগে রাখুন</a></p>
+              <p><a href="#" class="btn light-blue">পরিবর্তন করুন</a></p>
             </div>
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4">কমলা<i class="material-icons right">close</i></span>
@@ -142,10 +143,46 @@
     </div>
     <br><br>
   </div>
-  <div class="fixed-action-btn">
-    <a class="btn-floating btn-large red" href="cart.html">
-      <i class="large material-icons">add_shopping_cart</i>
-    </a>
+
+  <div id="add_product" class="side_add_product sidenav">
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="first_name" type="text" class="validate">
+            <label for="first_name">পণ্যের নাম</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">বিক্রয় মুল্য</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="last_nam" type="text" class="validate">
+            <label for="last_nam">স্টক পরিমাণ</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="last_na" type="text" class="validate">
+            <label for="last_na">পরিবহণ খরচ</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="last_na" type="text" class="validate">
+            <label for="last_na">সর্বনিম্ন বিক্রয় পরিমাণ</label>
+          </div>
+          <div class="file-field col s12 input-field">
+            <div class="btn light-blue">
+              <span>ছবি</span>
+              <input type="file">
+            </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" type="text">
+            </div>
+          </div>
+          <div class="col s12 center">
+            <button class="btn light-blue" type="submit">সংরক্ষণ করুন</button>
+          </div>
+        </div>
+      </form>
+    </div>
   </div>
 
   <!-- <footer class="page-footer light-blue">
