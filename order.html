@@ -43,8 +43,7 @@
       <br><br>
       <h1 class="header center light-blue-text">আমার বাজার</h1>
       <div class="row center">
-        <h5 class="header col s12 light">আপনার পন্য সমূহ</h5>
-        <a data-target="add_product" class="waves-effect waves-light btn right light-blue sidenav-trigger"><i class="material-icons left">add_box</i>নতুন পণ্য যোগ করুন</a>
+        <h5 class="header col s12 light">আপনার অর্ডার সমূহ</h5>
       </div>
     </div>
   </div>
@@ -55,92 +54,74 @@
 
       <!--   Icon Section   -->
       <div class="row">
-        <div class="col s12 m3">
-          <div class="card">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="img/product/anar.jpg">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">আনার<i class="material-icons right">more_vert</i></span>
-              <p><a href="edit.html" class="btn light-blue">পরিবর্তন করুন</a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">আনার<i class="material-icons right">close</i></span>
-              <ul>
-                <li>দামঃ ২৫০টাকা কেজি</li>
-                <li>মিনিমাম ৫কেজি কিনতে হবে</li>
-                <li>স্থানঃ ঢাকা</li>
-                <li>বিক্রেতাঃ কামাল মিয়া</li>
-                <li>ফোনঃ ০১৭০০০০০০০০</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m3">
-          <div class="card">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="img/product/mango.jpg">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">আম<i class="material-icons right">more_vert</i></span>
-              <p><a href="edit.html" class="btn light-blue">পরিবর্তন করুন</a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">আম<i class="material-icons right">close</i></span>
-              <ul>
-                <li>দামঃ ২৫০টাকা কেজি</li>
-                <li>মিনিমাম ৫কেজি কিনতে হবে</li>
-                <li>স্থানঃ ঢাকা</li>
-                <li>বিক্রেতাঃ কামাল মিয়া</li>
-                <li>ফোনঃ ০১৭০০০০০০০০</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m3">
-          <div class="card">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="img/product/mango2.jpg">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">ফজলি আম<i class="material-icons right">more_vert</i></span>
-              <p><a href="edit.html" class="btn light-blue">পরিবর্তন করুন</a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">ফজলি আম<i class="material-icons right">close</i></span>
-              <ul>
-                <li>দামঃ ২৫০টাকা কেজি</li>
-                <li>মিনিমাম ৫কেজি কিনতে হবে</li>
-                <li>স্থানঃ ঢাকা</li>
-                <li>বিক্রেতাঃ কামাল মিয়া</li>
-                <li>ফোনঃ ০১৭০০০০০০০০</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m3">
-          <div class="card">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="img/product/orange.jpg">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">কমলা<i class="material-icons right">more_vert</i></span>
-              <p><a href="edit.html" class="btn light-blue">পরিবর্তন করুন</a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">কমলা<i class="material-icons right">close</i></span>
-              <ul>
-                <li>দামঃ ২৫০টাকা কেজি</li>
-                <li>মিনিমাম ৫কেজি কিনতে হবে</li>
-                <li>স্থানঃ ঢাকা</li>
-                <li>বিক্রেতাঃ কামাল মিয়া</li>
-                <li>ফোনঃ ০১৭০০০০০০০০</li>
-              </ul>
-            </div>
-          </div>
+        <div class="col s12 z-depth-1">
+          <h5>বিক্রয় অর্ডার সমূহ</h5>
+          <table class="responsive-table">
+            <thead>
+              <tr>
+                <th>অর্ডার নং</th>
+                <th>তারিখ</th>
+                <th>মুল্য</th>
+                <th>অবস্থা</th>
+                <th class="center">বিস্তারিত</th>
+                <th class="center">ব্যবস্থা</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>BUY001001</td>
+                <td>12-12-2020</td>
+                <td>১৫০টাকা</td>
+                <td>কনফার্ম হয়েছে</td>
+                <td class="center"><a href="details.html" class="btn btn-sm light-blue">বিস্তারিত</a></td>
+                <td class="center"><button class="btn btn-sm green">চালান দিন</button></td>
+              </tr>
+              <tr>
+                <td>BUY001002</td>
+                <td>12-12-2020</td>
+                <td>১৫০টাকা</td>
+                <td>এখনো কনফার্ম হয়নি</td>
+                <td class="center"><a href="details.html" class="btn btn-sm light-blue">বিস্তারিত</a></td>
+                <td class="center"><button class="btn btn-sm green">কনফার্ম করুন</button></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
+      <div class="row">
+        <div class="col s12 z-depth-1">
+          <h5>ক্রয় অর্ডার সমূহ</h5>
+          <table class="responsive-table">
+            <thead>
+              <tr>
+                <th>অর্ডার নং</th>
+                <th>তারিখ</th>
+                <th>মুল্য</th>
+                <th>অবস্থা</th>
+                <th>বিস্তারিত</th>
+              </tr>
+            </thead>
 
+            <tbody>
+              <tr>
+                <td>BUY001001</td>
+                <td>12-12-2020</td>
+                <td>১৫০টাকা</td>
+                <td>কুরিয়ারে আছে</td>
+                <td><a href="details.html" class="btn btn-sm light-blue">বিস্তারিত</a></td>
+              </tr>
+              <tr>
+                <td>BUY001002</td>
+                <td>12-12-2020</td>
+                <td>১৫০টাকা</td>
+                <td>এখনো কনফার্ম হয়নি</td>
+                <td><a href="details.html" class="btn btn-sm light-blue">বিস্তারিত</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
     <br><br>
   </div>
